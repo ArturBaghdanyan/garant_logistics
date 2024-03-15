@@ -1,0 +1,293 @@
+header {
+  background-image: url("../assets/header_images/transportation-logistics.png");
+  background-attachment: scroll;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: auto;
+}
+header #header {
+  width: 67%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  padding-top: 57px;
+  margin: auto;
+}
+header #header .border {
+  width: 100%;
+  border: 1px solid #FFFFFF;
+}
+header #header #header_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+header #header #header_menu > .bx {
+  width: 15px;
+  height: 15px;
+}
+header #header nav {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 14px;
+  padding: 0 45px 0 30px;
+}
+header #header nav .nav {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header #header nav .nav > a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #FFFFFF;
+  font-family: Poppins;
+  font-size: 18px;
+  background: none;
+}
+header #header nav .nav > a:hover {
+  -webkit-box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 5px 5px rgb(255, 255, 255);
+          box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 5px 5px rgb(255, 255, 255);
+}
+header #header nav .nav select {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 18px;
+}
+header #header nav .nav select > option {
+  background: gray;
+}
+@media only screen and (min-width: 460px) and (max-width: 960px) {
+  header #header nav {
+    display: none;
+  }
+}
+@media only screen and (min-width: 965px) and (max-width: 1024px) {
+  header #header nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    padding: 0 22px 0 12px;
+  }
+  header #header nav > .nav > a {
+    font-size: 13px;
+  }
+  header #header nav > .nav > select {
+    font-size: 12px;
+  }
+}
+@media only screen and (min-width: 1025px) and (max-width: 1149px) {
+  header #header nav {
+    width: 80%;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0 22px 0 12px;
+  }
+  header #header nav .nav > a {
+    font-size: 15px;
+  }
+  header #header nav .nav > select {
+    font-size: 14px;
+  }
+}
+@media only screen and (min-width: 1150px) and (max-width: 1245px) {
+  header #header nav {
+    width: 80%;
+    padding: 0 30px 0 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header #header nav > .nav > a {
+    font-size: 14px;
+  }
+  header #header nav > .nav > select {
+    font-size: 14px;
+  }
+}
+header #header .flag {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px;
+}
+header #header .flag > span {
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+header #header .garant_image {
+  width: 140px;
+}
+header #header .garant_image > img {
+  width: 140px;
+}
+@media only screen and (min-width: 1024px) and (max-width: 1204px) {
+  header #header .garant_image {
+    width: 120px;
+  }
+  header #header .garant_image > img {
+    width: 120px;
+  }
+}
+@media only screen and (max-width: 678px) {
+  header #header .garant_image {
+    width: 100%;
+  }
+  header #header .garant_image > img {
+    width: 100px;
+  }
+}
+@media only screen and (min-width: 1000px) and (max-width: 1024px) {
+  header #header {
+    width: 60%;
+  }
+}
+header .logistics {
+  width: 472px;
+  height: auto;
+  padding: 150px 0 150px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  row-gap: 30px;
+}
+header .logistics > img {
+  width: 28.8px;
+  height: 105.6px;
+}
+header .logistics .logistics_leading {
+  width: 459px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 12px;
+     -moz-column-gap: 12px;
+          column-gap: 12px;
+}
+header .logistics .logistics_leading > span {
+  width: 34px;
+  height: 0;
+  border: 1px solid lightgray;
+}
+header .logistics .logistics_leading > p {
+  width: 100%;
+  font-family: italic;
+  font-weight: 400;
+  font-size: 26px;
+  text-align: center;
+}
+header .logistics > .logistics_text {
+  font-size: 63px;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+header .logistics > .submit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 225px;
+  height: 66px;
+  margin: auto;
+}
+header .logistics > .submit > button {
+  width: 100%;
+  height: auto;
+  background: rgb(153, 27, 31);
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 45px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 20px;
+}
+@media only screen and (min-width: 880px) and (max-width: 1100px) {
+  header .logistics {
+    width: 67%;
+    max-width: 380px;
+  }
+  header .logistics > .logistics_leading {
+    width: 90%;
+  }
+  header .logistics > .logistics_leading > p {
+    font-size: 18px;
+  }
+  header .logistics > .logistics_text {
+    font-size: 45px;
+  }
+}
+@media only screen and (max-width: 678px) {
+  header .logistics {
+    width: 80%;
+  }
+  header .logistics > .logistics_text {
+    font-size: 40px;
+  }
+}

@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Title</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+
+<div class="features">
+
+<header>
+  <div id="header" class="resp-size">
+
+    <a href="#" class="garant_image">
+      <img src="assets/header_images/garant.svg" alt="garant">
+    </a>
+
+    <div id="header_wrap">
+      <button class="header_button">
+        <i class='bx bx-menu'></i>
+      </button>
+    </div>
+
+    <div id="menu_list" class="mobile_nav">
+      <nav class="nav_list">
+        <a href="#">About us</a>
+        <a href="#">News</a>
+        <a href="#">Gallery</a>
+        <a href="#">Career</a>
+        <a href="#">Document</a>
+      </nav>
+        <span class="close_btn">
+          <i class='bx bx-x' ></i>
+        </span>
+    </div>
+
+    <nav>
+      <div class="border"></div>
+      <div class="nav">
+        <a href="#">About Us</a>
+        <div class="select">
+          <a href="#">Services</a>
+          <i class='bx bx-chevron-down'></i>
+        </div>
+        <div class="select">
+          <a href="#">Countries</a>
+          <i class='bx bx-chevron-down'></i>
+        </div>
+        <a href="#">News</a>
+        <a href="#">Gallery</a>
+        <a href="#">Career</a>
+        <a href="#">Document</a>
+      </div>
+    </nav>
+
+    <div class="login">
+      <span>login</span>
+      <div style="display: flex; flex-direction: column; height: 33px;" id="menu_flag">
+      <button id="header_flags">
+        <img src="assets/header_images/usa.png" alt="flag">
+      </button>
+      <div id="flags" class="dropdown">
+        <img src="assets/header_images/usa.png" alt="flag" onclick="changeFlag(this)">
+        <img src="assets/header_images/uk.png" alt="usa_flag" onclick="changeFlag(this)">
+        <img src="assets/header_images/ger.png" alt="ger_flag" onclick="changeFlag(this)">
+      </div>
+      </div>
+
+    </div>
+
+  </div>
+  <div class="resp-size">
+    <div class="logistics">
+      <img src="assets/header_images/header_logistics.svg" alt="logistics">
+      <div class="logistics_leading">
+        <span></span>
+        <p>We are committed to be the leading</p>
+        <span></span>
+      </div>
+      <div class="logistics_text" style="color: rgba(153, 27, 31, 1)">
+        world class
+      </div>
+      <div class="logistics_text">
+        Logistics
+      </div>
+
+      <div class="submit">
+        <button>SUBMIT ENQUIRY</button>
+      </div>
+    </div>
+
+  </div>
+</header>
+
+<aside>
+  <div class="aside resp-size">
+    <div class="piece">
+      <div class="piece_text">
+        <p>
+          <span class="piece-number infinite" data-val="100"></span>
+          <span>+</span>
+        </p>
+        <p>Countries Worldwide</p>
+      </div>
+      <div class="parallelogram">
+        <div class="paral_border"></div>
+      </div>
+      <div class="parallelogram2">
+        <div class="paral_border2"></div>
+      </div>
+    </div>
+    <div class="piece">
+      <div class="piece_text">
+        <p>
+          <span class="piece-number infinite" data-val="7"></span>
+          <span>+</span>
+        </p>
+        <p>Years Experience</p>
+      </div>
+      <div class="parallelogram">
+        <div class="paral_border"></div>
+      </div>
+      <div class="parallelogram2">
+        <div class="paral_border2"></div>
+      </div>
+    </div>
+    <div class="piece">
+      <div class="piece_text">
+        <p>
+          <span class="piece-number infinite" data-val="360"></span>
+          <span>+</span>
+        </p>
+        <p>Trust Of Clients</p>
+      </div>
+      <div class="parallelogram">
+        <div class="paral_border"></div>
+      </div>
+      <div class="parallelogram2">
+        <div class="paral_border2"></div>
+      </div>
+    </div>
+    <div class="piece">
+      <div class="piece_text">
+        <p>
+          <span class="piece-number infinite" data-val="60"></span>
+          <span>k+</span>
+        </p>
+        <p>Tones Of Cargos</p>
+      </div>
+      <div class="parallelogram">
+        <div class="paral_border"></div>
+      </div>
+      <div class="parallelogram2">
+        <div class="paral_border2"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="aside_title resp-size">
+    <p>our services</p>
+  </div>
+
+  <div class="swiper resp-size">
+    <div class="swiper-wrapper"></div>
+  </div>
+
+</aside>
+
+<section>
+  <div class="first-image">
+    <img src="assets/direction_images/img.png" alt="img">
+  </div>
+  <div class="second-image">
+    <img src="assets/direction_images/airplane.png" alt="airplane">
+  </div>
+  <div class="section_title resp-size">OUR GLOBAL DESTINATIONS</div>
+  <div class="destination resp-size">
+    <div class="destination_globe">
+      <img src="assets/direction_images/globe.png" alt="globe">
+    </div>
+    <div class="destination_text">
+      <p id="about_eu" class="eu-text" style="display: none">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio
+        eligendi fuga inventore modi mollitia nostrum obcaecati quas reiciendis
+        voluptas voluptate? Ab doloribus eveniet minima porro possimus quaerat
+        quidem repellendus! Dicta dolorem iusto molestiae provident ut.
+      </p>
+      <p id="about_eaeu" class="eaeu-text" style="display: none">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores harum
+        mollitia quia rem soluta vel? Debitis delectus et, eveniet facilis ipsum
+        itaque mollitia nobis tempora! Ducimus molestias natus neque quae.
+      </p>
+      <p id="about_asia" class="asia-text" style="display: block">
+        Garant Logistics carries out cargo transportation in more
+        than 100 countries around the world, providing a full range
+        of logistic services for air, sea and land cargo transportation
+        and ensuring fast, safe and reliable transportation of your cargo.
+         of your cargo.
+      </p>
+    </div>
+
+  </div>
+  <div class="destination_footer resp-size">
+    <div class="destination_row">
+      <span id='country'  class="text" style="display: none">eu</span>
+      <span id='country2' class="text" style="display: none">eaeu</span>
+      <span id='country3' class="text" style="display: block">asia</span>
+    </div>
+    <div class="destination_row">
+      <span class="span">eu</span>
+      <span class="span2">eaeu</span>
+      <span class="span3" style="color: #991B1F">asia</span>
+    </div>
+  </div>
+</section>
+
+<main>
+    <div class="main">
+      <div id="rectangle" class="reveal resp-size">
+        <span>Lorem ipsum dolor sit amet</span>
+      </div>
+      <div class="swiper second_swiper reveal">
+        <div class="swiper-wrapper resp-size"></div>
+      </div>
+    </div>
+  </main>
+
+<footer>
+
+  <div class="footer">
+    <div class="image">
+      <img src="assets/footer/container.png" alt="">
+    </div>
+
+  <div class="footer_outer resp-size">
+
+  <div class="footer_container">
+    <div class="footer_piece">
+
+    <div class="column_piece">
+      <h2>Services</h2>
+      <a href="#">Document</a>
+      <a href="#">Services</a>
+      <a href="#">Countries</a>
+      <a href="#">News</a>
+      <a href="#">gallery</a>
+    </div>
+    <div class="column_piece">
+      <h2>Company</h2>
+      <a href="#">About us</a>
+      <a href="#">Careers</a>
+      <a href="#">Contact us</a>
+      <a href="#">FAQ</a>
+    </div>
+    </div>
+
+    <div class="footer-dark">
+
+      <div class="last_column">
+
+      <div class="footer-dark_title">
+        <p>Subscribe</p>
+      </div>
+      <div class="footer-dark_subscribe" id="footer_form">
+        <input type="email" placeholder="Email address">
+        <button>
+          <i class='bx bx-right-arrow-alt'></i>
+        </button>
+        <div class="error"></div>
+      </div>
+      <div class="footer-dark_text">
+        <p>
+          Lorem ipsum dolor sit amet consectetur. Orci gravida aliquam
+          pulvinar metus. Tincidunt ut placerat senectus scelerisque
+          imperdiet pulvinar aliquet maecenas habitasse. Sed morbi non
+          adipiscing urna nunc potenti pharetra enim adipiscing. Arcu leo
+          dui dignissim aliquam vulputate.
+        </p>
+      </div>
+      </div>
+    </div>
+
+  </div>
+
+     <div class="wrapper">
+       <div class="border"></div>
+       <div class="wrapper_outer">
+         <div class="garant_image">
+           <img src="assets/header_images/garant.svg" alt="garant">
+         </div>
+         <div class="outer_nav">
+           <a href="#">© Copyright 2023 - Garant Logistics</a>
+         </div>
+         <a class="outer_link" href="#">
+           <i class='bx bxl-youtube'></i>
+           <i class='bx bxl-facebook'></i>
+         </a>
+       </div>
+     </div>
+    </div>
+  </div>
+</footer>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="index.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

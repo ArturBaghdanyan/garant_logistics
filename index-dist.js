@@ -1,0 +1,1 @@
+const swiper=new Swiper(".swiper",{direction:"horizontal",loop:!0,spaceBetween:10});

@@ -1,0 +1,388 @@
+@import 'css/header';
+@import 'css/footer';
+@import 'css/section';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.features {
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+
+  .resp-size {
+    padding: 0 16.5% 0 16.5%;
+  }
+
+  aside {
+    position: relative;
+    background-color: #D9D9D9;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding-bottom: 180px;
+    row-gap: 90px;
+
+    .aside {
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      margin: auto;
+
+      .piece {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+
+        .parallelogram {
+          position: absolute;
+          top: -40px;
+          width: 150px;
+          height: 40px;
+          transform: skew(-50deg);
+          background: #991B1F;
+
+          > .paral_border {
+            position: absolute;
+            top: 0;
+            left: 10px;
+            width: 150px;
+            height: 40px;
+            background: none;
+            border: 1px solid white;
+            border-bottom: none;
+          }
+        }
+
+        .parallelogram2 {
+          position: absolute;
+          top: 0;
+          width: 150px;
+          height: 40px;
+          transform: skew(50deg);
+          background: #991B1F;
+
+          > .paral_border2 {
+            position: absolute;
+            top: 0;
+            left: 10px;
+            width: 150px;
+            height: 40px;
+            background: none;
+            border: 1px solid white;
+            border-top: none;
+          }
+        }
+        @media only screen and (min-width: 1340px) and (max-width: 1920px) {
+          .parallelogram {
+            width: 200px;
+            .paral_border {
+              width: 200px;
+            }
+          }
+          .parallelogram2 {
+            width: 200px;
+            .paral_border2 {
+              width: 200px;
+            }
+          }
+        }
+
+        > .piece_text {
+          position: absolute;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          top: -27px;
+          width: 50px;
+          height: 80px;
+          z-index: 1;
+          color: white;
+          row-gap: 10px;
+          font-family: sans-serif;
+
+          > p {
+            font-size: 18px;
+            display: flex;
+          }
+
+          p:first-child {
+            content: '';
+            position: absolute;
+            top: 0;
+            border-bottom: 1px solid white;
+          }
+        }
+
+        > .piece_text > p:last-child {
+          font-size: 12px;
+        }
+      }
+    }
+
+    @media only screen and (max-width: 400px) {
+      .aside {
+        .piece {
+
+          .piece_text {
+            top: -15px;
+            width: 53px;
+            text-align: start;
+          }
+          > .piece_text > p:first-child {
+            font-size: 13px;
+          }
+
+          > .piece_text > p:last-child {
+            font-size: 9px;
+          }
+
+          .parallelogram {
+            width: 35px;
+
+            > .paral_border {
+              width: 35px;
+            }
+          }
+
+          .parallelogram2 {
+            width: 35px;
+
+            > .paral_border2 {
+              width: 35px;
+            }
+          }
+        }
+      }
+    }
+    @media only screen and (min-width: 401px) and (max-width: 677px) {
+      .aside {
+        > .piece {
+
+          > .piece_text > p:first-child {
+            font-size: 13px;
+          }
+
+          > .piece_text > p:last-child {
+            font-size: 9px;
+          }
+        }
+        > .piece > .parallelogram {
+          width: 75px;
+
+          > .paral_border {
+            width: 75px;
+          }
+        }
+        > .piece > .parallelogram2 {
+          width: 75px;
+
+          > .paral_border2 {
+            width: 75px;
+          }
+        }
+      }
+    }
+
+    @media only screen and (min-width: 678px) and (max-width: 900px) {
+      .aside {
+
+        > .piece > .parallelogram {
+          width: 100px;
+
+          > .paral_border {
+            width: 100px;
+          }
+        }
+        > .piece > .parallelogram2 {
+          width: 100px;
+
+          > .paral_border2 {
+            width: 100px;
+          }
+        }
+      }
+    }
+
+    @media only screen and (min-width: 902px) and (max-width: 1000px) {
+      .aside {
+
+        > .piece > .parallelogram {
+          width: 125px;
+
+          > .paral_border {
+            width: 125px;
+          }
+        }
+        > .piece > .parallelogram2 {
+          width: 125px;
+
+          > .paral_border2 {
+            width: 125px;
+          }
+        }
+      }
+    }
+
+    > .aside_title {
+      width: 100%;
+      display: flex;
+      margin: auto;
+      padding-top: 30px;
+      font-weight: bold;
+
+      > p {
+        text-transform: uppercase;
+        color: #991B1F;
+        font-size: 42px;
+      }
+    }
+
+    @media only screen and (max-width: 405px) {
+      .aside_title > p {
+        font-size: 24px;
+        text-align: center;
+      }
+    }
+
+    @media only screen and (min-width: 1331px) and (max-width: 1920px) {
+      .aside_title > p {
+          font-size: 64px;
+        }
+    }
+  }
+
+  .swiper {
+    width: 100% !important;
+    height: auto;
+    display: flex;
+
+    .swiper-wrapper {
+      width: 100%;
+      display: flex;
+      margin: 30px auto;
+
+      > .swiper-slide {
+        width: 300px !important;
+        height: 400px;
+
+        > img {
+          width: 100%;
+          height: 100%;
+        }
+
+      }
+      > .swiper_slide img:hover img:active {
+        transform: scale(1);
+      }
+    }
+  }
+  @media only screen and (max-width: 1024px) {
+    aside {
+      column-gap: 20px;
+    }
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    width: 100% !important;
+    height: auto;
+    background: #991B1F;
+    padding: 8% 0 10% 0;
+
+    .main {
+      #rectangle {
+        float: left;
+        font-size: 40px;
+        font-family: "Lucida Console", Monaco, monospace;
+        color: white;
+        padding-bottom: 35px;
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+
+      #rectangle > span {
+        width: 100%;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        border-right: 2px solid;
+        white-space: nowrap;
+        overflow: hidden;
+        animation: typing 2s steps(10),
+        blink-caret .10s step-end alternate infinite;
+        animation-delay: 3s;
+      }
+
+      @keyframes typing {
+        from {
+          width: 0
+        }
+        to {
+          width: 100%
+        }
+      }
+      @media only screen and (min-width: 320px) and (max-width: 649px) {
+        #rectangle {
+          font-size: 10px;
+
+          > span {
+            height: 50px;
+          }
+        }
+      }
+      @media only screen and (min-width: 650px) and (max-width: 802px) {
+        #rectangle {
+          font-size: 13px;
+
+          > span {
+            height: 50px;
+          }
+        }
+      }
+      @media only screen and (min-width: 803px) and (max-width: 1100px) {
+        #rectangle {
+          font-size: 15px;
+
+          > span {
+            height: 50px;
+          }
+        }
+      }
+      @media only screen and (min-width: 1101px) and (max-width: 1239px) {
+        #rectangle {
+          font-size: 19px;
+        }
+      }
+      @media only screen and (min-width: 1240px) and (max-width: 1300px) {
+        #rectangle {
+          font-size: 18px;
+        }
+      }
+
+      .reveal {
+        opacity: 0;
+        transition: opacity 0.5s;
+      }
+
+      .reveal.active {
+        opacity: 1;
+      }
+    }
+
+    @media only screen and (max-width: 1100px) {
+      .main {
+        padding-bottom: 10%;
+      }
+    }
+  }
+ }
+
